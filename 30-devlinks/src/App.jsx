@@ -19,7 +19,7 @@ function App() {
       </div>
 
 
-      <div className='links'>
+      <div id='Links'>
         <ul>
           <Link url={""}>Inscreva-se</Link>
           <Link url={""}>Minha Playlist</Link>
@@ -29,13 +29,13 @@ function App() {
       </div>
 
 
-      <div className='socialLinks'></div> 
+      <div id='SocialLinks'> 
       <SocialLink url={"https://github.com"} icon={"logo-github"}/>
       <SocialLink url={"https://instagram.com"} icon={"logo-instagram"}/>
       <SocialLink url={"https://youtube.com"} icon={"logo-youtube"}/>
       <SocialLink url={"https://www.linkedin.com/"} icon={"logo-linkedin"}/>
 
-
+</div> 
 
       <div>
         <Rodape>Hbi18</Rodape>

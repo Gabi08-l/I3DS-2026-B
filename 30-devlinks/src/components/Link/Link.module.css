@@ -11,6 +11,7 @@ li a {
     border-style: solid;
     background-color: var(--surface-color);
     font-weight: bold;
+    color: var(--text-color);
 }
 
 li a:hover{
