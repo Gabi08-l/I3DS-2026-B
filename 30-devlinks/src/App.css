@@ -9,6 +9,16 @@
     --highlight-color: rgba(0,0,0,0.2)
 }
 
+.light {
+     --bg-url: url(./assets/bg-desktop.jpg);
+    --text-color: #b8b2b2;
+    --stroke-color: rgba(253, 253, 253, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --stroke-color-hover: rgba(248, 248, 248, 0.4);
+    --switch-bg-url: url(./assets/MoonStars.svg) ;
+    --highlight-color: rgba(0,0,0,0.2)
+}
+
 #App /*tipo um Id/*/ {
     height: 100vh; /* 100%*/
     display: flex;
@@ -21,15 +31,25 @@
     background-size: cover; /*papo de proporção*/
     color: var(--text-color);
     font-family: "Inter", sans-serif;
+    transition: background 0.2s;
 
 }
- ul{
-    list-style: none; /*as bolinhas listando*/
+ #Link {
     display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding: 24px;
-}
+    justify-content: center;
+
+    & ul { 
+        width: 100%;
+        max-width: 588px;
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+    }
+ }
+
     
 #SocialLinks {
     display: flex;

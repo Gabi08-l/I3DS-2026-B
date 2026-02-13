@@ -12,6 +12,7 @@ li a {
     background-color: var(--surface-color);
     font-weight: bold;
     color: var(--text-color);
+    transition: background 0.2s;
 }
 
 li a:hover{
