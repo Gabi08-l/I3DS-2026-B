@@ -1,0 +1,28 @@
+:root{
+    /*--, é variavel no css*/
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --text-color: #000;
+    --stroke-color: rgba(0,0,0,0.5);
+    --surface-color: rgba(0,0,0,0.1);
+    --stroke-color-hover: rgba(0,0,0,0.4);
+    --switch-bg-url: url(./assets/Sun.svg) ;
+    --highlight-color: rgba(0,0,0,0.2)
+}
+
+#App /*tipo um Id/*/ {
+    height: 100vh; /* 100%*/
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /*papo de proporção*/
+    color: var(--text-color);
+
+}
+ ul{
+    list-style: none; /*as bolinhas listando*/
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+    
