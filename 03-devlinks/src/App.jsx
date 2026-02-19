@@ -36,7 +36,7 @@ function App() {
         <SocialLink url={"https://www.youtube.com/@republicacoisadenerd"} icon={"logo-youtube"} />
         <SocialLink url={"https://br.linkedin.com/"} icon={"logo-linkedin"} />
       </div>
-      <Rodape>Hbi17.7</Rodape>
+      <Rodape link={"https://github.com/Gabi08-l"}>Hbi17.7</Rodape>
     </div>
   );
 }

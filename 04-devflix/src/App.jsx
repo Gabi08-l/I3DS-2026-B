@@ -17,7 +17,7 @@ const App = () => {
         <img src={lupa} alt="Botão para a pesquisa" />
       </div>
 
-      <Rodape>Hbi17.7</Rodape>
+       <Rodape link={"https://github.com/Gabi08-l"}>Hbi17.7</Rodape>
     </div>
   );
 };
