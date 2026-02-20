@@ -24,7 +24,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies(" "); //termo pra pesquisa
   }, []);
 
   return (
@@ -55,7 +55,7 @@ const App = () => {
 
     
 
-      <Rodape link={"https://github.com/ProfCastello"}>ProfCastello</Rodape>
+      <Rodape link={"https://github.com/ProfCastello"}>Hbi</Rodape>
     </div>
   );
 };
