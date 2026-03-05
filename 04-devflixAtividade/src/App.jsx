@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      await searchMovies("Ben 10"); //termo pra pesquisa
+      await searchMovies(""); //termo pra pesquisa
     })();
   }, []);
 
