@@ -3,7 +3,9 @@
   --font-raleway: "Raleway", sans-serif;
 
   /* Light theme (padrão) */
-  --bg-primary: #f5f5f5;
+  --bg-gradient: linear-gradient(135deg, #ececec 0%, #fff 100%); /*mudar no bgc o var*/
+  
+  
   --bg-secondary: #fff;
   --text-primary: #333;
   --text-secondary: #666;
@@ -16,7 +18,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark theme */
-    --bg-primary: #212426;
+    --bg-gradient: linear-gradient(135deg, #1a1c1e 0%, #212426 100%);
+    
     --bg-secondary: #343739;
     --text-primary: #f5f5f5;
     --text-secondary: #f0f0f0;
@@ -29,7 +32,7 @@
 
 body {
   font-family: var(--font-raleway);
-  background: var(--bg-primary);
+  background: var(--bg-gradient);
 
   color: var(--text-primary);
 
