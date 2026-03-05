@@ -3,29 +3,29 @@
   --font-raleway: "Raleway", sans-serif;
 
   /* Light theme (padrão) */
-  --bg-gradient: linear-gradient(135deg, #ececec 0%, #fff 100%); /*mudar no bgc o var*/
+  --bg-gradient: linear-gradient(135deg, #f2ecec 0%, #fff 100%); /*mudar no bgc o var*/
   
   
   --bg-secondary: #fff;
   --text-primary: #333;
   --text-secondary: #666;
   --text-placeholder: #a1a1a1;
-  --accent-color: #ff6b6b;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --shadow: 0px 2px 8px var(--shadow-color);
+  --accent-color: #e63946;
+  --shadow-color: rgba(230, 57, 70, 0.1);
+  --shadow: 0px 4px 15px var(--shadow-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark theme */
-    --bg-gradient: linear-gradient(135deg, #104477 0%, #062133 100%);
-    
+    --bg-gradient: linear-gradient(135deg, #161617 0%, #3a1212 100%);
+    --bg-primary: #f5f5f5;
     --bg-secondary: #343739;
     --text-primary: #f5f5f5;
     --text-secondary: #f0f0f0;
     --text-placeholder: #a1a1a1;
-    --accent-color: #ffa500;
-    --shadow-color: rgba(0, 0, 0, 0.4);
+    --accent-color: #ff4d4d;
+    --shadow-color: rgba(0, 0, 0, 0.5);
     --shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   }
 }
