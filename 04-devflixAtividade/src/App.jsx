@@ -43,7 +43,7 @@ const App = () => {
           onKeyDown={(e) => e.key === "Enter" && searchMovies(search)}
           onChange={(e) => setSearch(e.target.value)}
           type="text"
-          placeholder="Pesquise por filmes"
+          placeholder="Pesquise por um filme!"
         />
         <img
           onClick={() => searchMovies(search)}

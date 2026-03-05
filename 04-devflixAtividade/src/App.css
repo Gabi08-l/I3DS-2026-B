@@ -26,7 +26,7 @@
     --text-placeholder: #a1a1a1;
     --accent-color: #ff4d4d;
     --shadow-color: rgba(230, 0, 0, 0.5);
-    --shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+    --shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527 var(--shadow-color) ; 
   }
 }
 
