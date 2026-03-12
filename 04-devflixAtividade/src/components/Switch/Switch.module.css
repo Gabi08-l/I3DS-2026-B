@@ -1,0 +1,72 @@
+#Switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+
+  & button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #fff;
+    background-image: var(--switch-bg-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    animation: slide-out 0.2s;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  & button:hover {
+    outline: 4px solid var(--stroke-color);
+    background-color: var(--surface-color-hover);
+  }
+
+  & span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease;
+  }
+}
+
+.light #Switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+.light #Switch span {
+  background-color: var(--surface-color);
+  border-color: var(--stroke-color);
+}
+
+/* animação */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 55%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 55%;
+  }
+  to {
+    left: 0;
+  }
+}
