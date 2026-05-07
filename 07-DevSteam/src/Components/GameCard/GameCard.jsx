@@ -9,6 +9,15 @@ const GameCard = ({image, porcentagem, precoOriginal, precoDesc}) => {
 
       <div className={styles.desc_container}>
         <h3 className={styles.text_exclu}>OFERTA ESPECIAL</h3>
+
+        <div className={styles.sec_preco}>
+            <div className={styles.porc_preco}>{porcentagem}</div>
+        </div>
+        <div className={styles.box_preco}>
+            <div className={styles.old_preco}>{precoOriginal}</div>
+            <div className={styles.new_preco}>{precoDesc}</div>
+
+        </div>
       </div>
     </div>
   )
