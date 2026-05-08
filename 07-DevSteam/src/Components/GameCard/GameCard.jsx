@@ -1,26 +1,29 @@
 import styles from "./GameCard.module.css"
 
-const GameCard = ({image, porcentagem, precoOriginal, precoDesc}) => {
-  return (
-    <div className={styles.game_box}>
-      <div className={styles.image}>
-        <img src={image} alt="" />
-      </div>
+const GameCard = ({imagem, porcentagem, precoOriginal, precoDesconto, nome}) => {
+    return (
+        <div className={styles.cards}>
+            <img src={imagem} alt={nome} />
 
-      <div className={styles.desc_container}>
-        <h3 className={styles.text_exclu}>OFERTA ESPECIAL</h3>
+            <div className={styles.info}>
+                <h3>{nome}</h3>
+                </div>
+                <div className={styles.preco_area}>
 
-        <div className={styles.sec_preco}>
-            <div className={styles.porc_preco}>{porcentagem}</div>
-        </div>
-        <div className={styles.box_preco}>
-            <div className={styles.old_preco}>{precoOriginal}</div>
-            <div className={styles.new_preco}>{precoDesc}</div>
-
-        </div>
-      </div>
+    <div className={styles.desconto}>
+        <span>{porcentagem}</span>
     </div>
-  )
-}
 
+    <div className={styles.precos}>
+        <small>R${precoOriginal}</small>
+        <h2>R${precoDesconto}</h2>
+    </div>
+
+</div>
+
+                <button className={styles.add_botao}>Adicionar ao carrinho</button>
+        </div>
+        
+    )
+}
 export default GameCard

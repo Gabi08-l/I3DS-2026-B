@@ -11,9 +11,18 @@
 
 
 html, body {
+     font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--primary-color) !important;
   color: var(--text-primary);
   min-height: 100vh;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap;
 }
