@@ -1,0 +1,9 @@
+.footer {
+  background-color: #1a1a1a; /* Um tom mais escuro que o fundo do site */
+  color: #888;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  margin-top: 50px; /* Dá um respiro do conteúdo de cima */
+}

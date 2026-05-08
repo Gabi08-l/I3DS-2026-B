@@ -1,6 +1,7 @@
+import React from "react"
 import styles from "./GameCard.module.css"
 
-const GameCard = ({imagem, porcentagem, precoOriginal, precoDesconto, nome}) => {
+const GameCard = ({imagem, porcentagem, precoOriginal, precoDesconto, nome, }) => {
     return (
         <div className={styles.cards}>
             <img src={imagem} alt={nome} />
